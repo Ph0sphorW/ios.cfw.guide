@@ -37,7 +37,7 @@ These are essentially databases that contain lots of tweaks for you to install. 
 
 ### What are tweaks?
 
-Tweaks are small modifications that can be installed change the look and/or feel of your device.
+Tweaks are small modifications that can be installed to change the look, feel, and/or function of your device.
 
 Unlike apps, tweaks usually don't come with an app icon, but rather instead an area in the Settings app to change how the tweak acts. Some simpler tweaks might not even have this.
 
@@ -111,14 +111,14 @@ While this can be easily figured out by checking <router-link to="/get-started">
 - **A7 iPads**: iOS 12.5.7 (via Odysseyra1n or Chimera)
 - **A7/A8 iPhones**: iOS 12.5.7 (via Odysseyra1n or Chimera)
 - **iPod Touch (6th Generation)**: iOS 12.5.7 (via Odysseyra1n or Chimera)
-- **A8/A10X Apple TVs**: tvOS 18.1 (via palera1n)
+- **A8/A10X Apple TVs**: tvOS 18.3 (via palera1n)
 - **A8(X) iPads**: iPadOS 15.8.3 (via Dopamine or palera1n)
 - **iPod Touch (7th Generation)**: iOS 15.8.3 (via Dopamine or palera1n)
 - **A9/A10 iPhones**: iOS 15.8.3 (via Dopamine or palera1n)
 - **A9(X) iPads**: iPadOS 16.7.10 (via palera1n)
-- **iPad 6th Generation**: iPadOS 17.7.1 (via palera1n)
-- **iPad 7th Generation**: iPadOS 18.1 (via palera1n)
-- **A10X iPad Pros**: iPadOS 17.7.1 (via palera1n)
+- **iPad 6th Generation**: iPadOS 17.7.5 (via palera1n)
+- **iPad 7th Generation**: iPadOS 18.3 (via palera1n)
+- **A10X iPad Pros**: iPadOS 17.7.5 (via palera1n)
 - **A11 iPhones**: iOS 16.7.10 (via palera1n)
 - **A12-A14 iPhones**: iOS 16.5.1 (via Dopamine)
 - **A12-A14/M1 iPads**: iPadOS 16.5.1 (via Dopamine)

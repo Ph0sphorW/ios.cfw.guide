@@ -26,9 +26,9 @@ sidebar: false
 -   <router-link to="/using-tns">Using TotallyNotSpyware</router-link>
 -   <router-link to="/installing-socket">Installing Socket</router-link>
 -   <router-link to="/installing-kok3shi9">Installing kok3shi9</router-link>
+-   <router-link to="/installing-everpwnage">Installing EverPwnage</router-link>
 -   <router-link to="/using-jailbreakme-4-0">Using JailbreakMe 4.0</router-link>
 -   <router-link to="/installing-pangu9">Installing Pangu9</router-link>
--   <router-link to="/installing-everpwnage">Installing EverPwnage</router-link>
 -   <router-link to="/installing-wtfis">Installing wtfis</router-link>
 -   <router-link to="/installing-pangu7">Installing Pangu7</router-link>
 -   <router-link to="/using-lyncis">Using Lyncis</router-link>
@@ -80,6 +80,7 @@ sidebar: false
 
 ## Miscellaneous
 
+-   <router-link to="/turdusmerula">turdus merula</router-link>
 -   <router-link to="/troubleshooting">Troubleshooting</router-link>
 -   <router-link to="/installing-trollstore">Installing TrollStore</router-link>
 -   <router-link to="/installing-nathanlr">Installing nathanlr</router-link>
@@ -97,6 +98,7 @@ sidebar: false
 -   <router-link to="/using-cydia">Using Cydia</router-link>
 -   <router-link to="/using-coolbooter">Using Coolbooter</router-link>
 -   <router-link to="/futurerestore-help">FutureRestore Help</router-link>
+-   <router-link to="/turdusmerula-tethered">turdus merula (Tethered)</router-link>
 
 ## 'Updating' Pages
 
@@ -104,8 +106,8 @@ sidebar: false
 -   <router-link to="/updating-blobless-alternate">Updating (Blobless) (Alternate Method)</router-link>
 -   <router-link to="/updating-blobless-nonjailbroken">Updating (Blobless) (Non-Jailbroken)</router-link>
 -   <router-link to="/updating-blobless-advanced">Updating (Blobless) (Advanced)</router-link>
--   <router-link to="/updating-to-18-1">Updating to 18.1</router-link>
--   <router-link to="/updating-to-17-7.1">Updating to 17.7.1</router-link>
+-   <router-link to="/updating-to-18-3-1">Updating to 18.3.1</router-link>
+-   <router-link to="/updating-to-17-7.5">Updating to 17.7.5</router-link>
 -   <router-link to="/updating-to-16-7-10">Updating to 16.7.10</router-link>
 -   <router-link to="/updating-to-15-8-3">Updating to 15.8.3</router-link>
 -   <router-link to="/updating-to-12-5-7">Updating to 12.5.7</router-link>
