@@ -1,27 +1,31 @@
 ## ios.cfw.guide
-A complete iOS modding guide, from stock to jailbroken.
+完整的 iOS 越狱指南，自崭新出厂到完全越狱。
 
 https://ios.cfw.guide/
 
-## Running the site locally
+本分支作为中文本地化仓库使用。由于上游迟迟不对中文文档进行翻译批复，故本人开启此仓库以进行个人翻译。
 
-This requires the following installed to your system:
+## 本地运行
+
+你需要在你的系统上安装如下软件:
 - [Node.js v12+](https://nodejs.org/)
 - [Yarn v1 classic](https://classic.yarnpkg.com/en/) (npm install --global yarn)
 
-To test the website locally, simply run the following commands:
+如需本地测试运行此网站，请运行如下命令:
 ```
-git clone https://github.com/cfw-guide/ios.cfw.guide.git --recursive
+git clone https://github.com/Ph0sphorW/ios.cfw.guide/.git --recursive
 cd ios.cfw.guide
 yarn install
 yarn dev
 ```
-to build the Markdown files into HTML and start a testing webserver on http://127.0.0.1:8080.
+以将 Markdown 文件转译为 HTML 并在 http://127.0.0.1:8080 上运行本地服务器。
 
-## Building the site
+## 构建网站
 
-Follow the steps above, but run `yarn build` instead at the final step. Once complete, the output will be stored at `/docs/.vuepress/dist`.
+遵循以上步骤，在最后一步改为执行 `yarn build`。完成之后输出结果将会储存在 `/docs/.vuepress/dist`。
 
-## Translating
+## 翻译本站
 
-To help translate ios.cfw.guide, please contribute to its [Crowdin project](https://crowdin.com/project/ioscfwguide). Do not PR changes directly to the repository as that will conflict with the translations managed by Crowdin.
+如需帮助 ios.cfw.guide 本地化，请到其 [Crowdin project](https://crowdin.com/project/ioscfwguide) 进行翻译而不是在上游仓库打开拉取请求。
+
+如需帮助本仓库进行翻译，请直接 PR，无需使用 Crowdin。
