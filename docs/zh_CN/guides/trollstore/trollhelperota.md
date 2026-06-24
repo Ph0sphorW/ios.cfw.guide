@@ -42,6 +42,6 @@ extra_contributors:
 1. 打开 `GTA Car Tracker`
 1. 点击 `Register Persistence Helper`
 1. 点击 `Install TrollStore`
-    - 如果你的设备重启了那么久重复上述的步骤
+    - 如果你的设备重启了那么就重复上述的步骤
 
-现在 TrollStore 应该已经安装好了。如果它没有出现在你的桌面上，那就重启你的设备。
+现在 TrollStore 应该已经安装好了。如果它没有出现在你的桌面上，那就重启你的设备。  

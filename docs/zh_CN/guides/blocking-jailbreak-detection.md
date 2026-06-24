@@ -23,11 +23,14 @@ extra_contributors:
 
 ::: danger
 
-Blocking jailbreak detection can stop you from accessing photos and other files while in selected applications.
+阻断越狱检测可能会导致在某些应用中无法访问照片和其他文件。
 
 :::
 
-Now, we'll go through each tweak that can be used to minimize jailbreak detection. Some apps, however, cannot be patched and will not work when jailbroken, regardless of the content below. Other apps may need bypasses made specifically for them.
+接下来，我们将逐一介绍可用于减少越狱检测的插件。但有些应用无法被绕过，无论使用什么方法，在越狱状态下都无法运行。
+
+还有一些应用可能需要专门为其制作的绕过方案。
+
 ## 插件
 
 - [A-Bypass](cydia://url/https://cydia.saurik.com/api/share#?source=https://repo.co.kr/&package=com.rpgfarm.a-bypass) (<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://repo.co.kr/">repo.co.kr</a>)
@@ -39,121 +42,121 @@ Now, we'll go through each tweak that can be used to minimize jailbreak detectio
 
 ::: tip
 
-Choicy is available on the default BigBoss repo, however we recommend adding the developer's repo to ensure you have the most up-to-date version.
+Choicy 在默认的 BigBoss 源中即可下载，但我们建议添加开发者自有源以确保你能够下载到最新的版本。
 
 :::
 
-There is other software available for hiding jailbreak, such as [Shadow](sileo://package/me.jjolano.shadow) (<a href="sileo://source/https://ios.jjolano.me/">ios.jjolano.me</a>), however we'll only be covering the above tweaks in this guide.
+还有其他可用于隐藏越狱的软件，例如 [Shadow](sileo://package/me.jjolano.shadow)（<a href="sileo://source/https://ios.jjolano.me/">ios.jjolano.me</a>），但本指南仅介绍上述插件。
 
-## Installation
+## 安装
 
-1. Open your package manager app (e.g. Cydia, Sileo, Zebra)
-1. Add the three repos linked above
-1. Search for and install the three packages
-1. Respring when prompted
+1. 打开你的包管理器应用（例如 Cydia、Sileo、Zebra）
+1. 添加上面链接的三个软件源
+1. 搜索并安装这三个软件包
+1. 出现提示时重新加载桌面
 
 ## A-Bypass
 
 ::: tip
 
-According to the tweak's author, A-Bypass works better on libhooker-based jailbreaks, such as <router-link to="/installing-chimera">Chimera</router-link>, <router-link to="installing-odyssey">Odyssey</router-link>, <router-link to="/installing-odysseyra1n">odysseyra1n</router-link>, and <router-link to="/installing-taurine">Taurine</router-link>. It still works on Substrate/Substitute-based jailbreaks, such as checkra1n and unc0ver, however.
+据插件作者所述，A-Bypass 在基于 libhooker 的越狱工具上表现更好，例如 <router-link to="/installing-chimera">Chimera</router-link>、<router-link to="installing-odyssey">Odyssey</router-link>、<router-link to="/installing-odysseyra1n">odysseyra1n</router-link> 和 <router-link to="/installing-taurine">Taurine</router-link>。不过它在基于 Substrate/Substitute 的越狱工具（如 checkra1n 和 unc0ver）上也能正常使用。
 
 :::
 
-1. Open the Settings application
-2. Scroll down to `A-Bypass`
-3. Tap on `Check for Updates`
-	- If a new app doesn't work with A-Bypass, you should always try to go back and try to check for updates in the A-Bypass preferences again.
-4. Scroll down and enable any apps you wish to block jailbreak detection with.
+1. 打开"设置"应用
+2. 向下滚动到 `A-Bypass`
+3. 点击 `检查更新`
+    - 如果某个新应用无法与 A-Bypass 配合使用，你应返回 A-Bypass 设置再次尝试检查更新。
+4. 向下滚动并启用你希望阻断越狱检测的应用。
 
 ## Liberty Lite
 
-1. Open the Settings application
-1. Scroll down to `Liberty Lite`
-1. Enable `Enable Liberty`
-1. Tap on `Block Jailbreak Detection`
-1. Enable all the apps you want to block jailbreak detection with
+1. 打开"设置"应用
+1. 向下滚动到 `Liberty Lite`
+1. 开启 `启用 Liberty`
+1. 点击 `阻断越狱检测`
+1. 启用所有你想要阻断越狱检测的应用
 
 ## Choicy
 
 ::: tip
 
-This is the best option for users wanting to use Snapchat on their jailbroken device.
+这是希望在越狱设备上使用 Snapchat 的用户的最佳选择。
 
 :::
 
 ::: tip
 
-If you use a libhooker-based jailbreak, such as <router-link to="/installing-chimera">Chimera</router-link>, <router-link to="installing-odyssey">Odyssey</router-link>, <router-link to="/installing-odysseyra1n">odysseyra1n</router-link>, or <router-link to="/installing-taurine">Taurine</router-link>, then [libhooker configurator](#libhooker-configurator) serves the same purpose as Choicy, while being natively integrated into libhooker.
+如果你使用基于 libhooker 的越狱工具，例如 <router-link to="/installing-chimera">Chimera</router-link>、<router-link to="installing-odyssey">Odyssey</router-link>、<router-link to="/installing-odysseyra1n">odysseyra1n</router-link> 或 <router-link to="/installing-taurine">Taurine</router-link>，那么 [libhooker configurator](#libhooker-configurator) 与 Choicy 功能相同，且原生集成在 libhooker 中。
 
 :::
 
-1. Open the Settings application
-1. Scroll down to `Choicy`
-1. Tap on `Applications`
-1. Tap on an application that you selected with Liberty Lite
-1. Enable `Custom Tweak Configuration`
-	- For Snapchat, enable `Disable Tweak Injection` and skip the next steps
-1. Make sure `Whitelist` is selected
-1. Enable the bypass you're using - for Liberty Lite this would be `zzzzzLiberty`, or `!ABypass2` for A-Bypass.
-1. Repeat this for every app you've selected to use with your bypass tweak.
+1. 打开"设置"应用
+1. 向下滚动到 `Choicy`
+1. 点击 `应用`
+1. 点击一个你通过 Liberty Lite 选择的应用
+1. 开启 `自定义插件配置`
+    - 对于 Snapchat，开启 `禁用插件注入` 并跳过后续步骤
+1. 确保选择了 `白名单`
+1. 启用你正在使用的绕过插件——Liberty Lite 对应的是 `zzzzzLiberty`，A-Bypass 对应的是 `!ABypass2`
+1. 对你选择使用绕过插件的每个应用重复此操作
 
 ## libhooker configurator
 
 ::: warning
 
-This only works on libhooker-based jailbreaks! If you use a Substrate or Substitute based jailbreak, such as checkra1n or unc0ver, then this *will not work*, and you should use [Choicy](#choicy) instead!
+此功能仅适用于基于 libhooker 的越狱工具。如果你使用基于 Substrate 或 Substitute 的越狱工具，例如 checkra1n 或 unc0ver，则此方法*无法使用*，你应该改用 [Choicy](#choicy)。
 
 :::
 
-1. Open the `libhooker` application
-1. Tap "Applications"
-1. Scroll down to the application you wish to configure, and tap on it
-1. Here, you can either disable tweaks entirely in this application, or configure individual tweaks.
-   - To configure individual tweaks, enable "Override Configuration", which will open up options to only allow specific tweaks or deny specific tweaks.
-   - For example, to allow only Liberty Lite, you'd select `Allow`, then select `zzzzzLiberty`.
-   - If you're using A-Bypass, you'd enable `!ABypass2` instead.
+1. 打开 `libhooker` 应用
+1. 点击"应用"
+1. 向下滚动到你希望配置的应用，并点击它
+1. 在这里，你可以选择完全禁用该应用中的插件，或配置单独的插件。
+   - 要配置单独的插件，开启"覆盖配置"，这将打开允许或拒绝特定插件的选项。
+   - 例如，要仅允许 Liberty Lite，你可以选择`允许`，然后选择 `zzzzzLiberty`。
+   - 如果你使用 A-Bypass，则应启用 `!ABypass2`。
 
-## KernBypass (iOS 12.0 - 14.2)
+## KernBypass（iOS 12.0 - 14.2）
 
 ::: tip
 
-This is the best option for users wanting to use Nintendo apps (Mario Kart Tour, Animal Crossing: Pocket Camp, etc) and Pokemon GO on their jailbroken device.
+这是希望在越狱设备上使用任天堂应用（Mario Kart Tour、Animal Crossing: Pocket Camp 等）和 Pokemon GO 的用户的最佳选择。
 
 :::
 
 ::: warning
 
-KernBypass will not work on iOS 14 using unc0ver. Look into [vnodebypass](#vnodebypass) instead.
+KernBypass 在使用 unc0ver 的 iOS 14 上无法正常工作，请改用 [vnodebypass](#vnodebypass)。
 
 :::
 
 ::: danger
 
-KernBypass is a kernel tweak. Do not install on unsupported devices, use it at your own risk.
+KernBypass 是一个内核级插件。请勿在不支持的设备上安装，**使用风险自负**。
 
 :::
 
-1. Open the Settings application
-1. Scroll down to `KernBypass`
-1. Tap `Enable KernBypass`
-1. Enable all the apps you want to block jailbreak detection with
+1. 打开"设置"应用
+1. 向下滚动到 `KernBypass`
+1. 点击 `启用 KernBypass`
+1. 启用所有你想要阻断越狱检测的应用
 
 ## vnodebypass
 
 ::: tip
 
-vnodebypass is similar to KernBypass in regards to what it can bypass, but be aware that while it is active, you will lose access to your tweaks!
+vnodebypass 在可绕过的内容上与 KernBypass 类似，但请注意，在其启用期间，你将无法使用所有插件。
 
 :::
 
 ::: danger
 
-vnodebypass is a kernel tweak. Do not install on unsupported devices, use it at your own risk.
+vnodebypass 是一个内核级插件。请勿在不支持的设备上安装，使用风险自负。
 
 :::
 
-1. If you are on iOS 14, ensure that `libkrw` 1.1.0 or later is installed. It is available in the default Elucubratus repository, if you are using unc0ver or checkra1n.
-2. Open the `vnodebypass` app
-3. Tap the `Enable` button
-4. When done using the app with jailbreak detection, go back into the `vnodebypass` app and tap `Disable`
+1. 如果你在 iOS 14 上，请确保已安装 `libkrw` 1.1.0 或更新版本。如果你使用 unc0ver 或 checkra1n，该包在默认的 Elucubratus 源中即可获取。
+2. 打开 `vnodebypass` 应用
+3. 点击 `启用` 按钮
+4. 当使用完需要绕过越狱检测的应用后，返回 `vnodebypass` 应用并点击 `禁用`

@@ -8,16 +8,19 @@ https://ios.cfw.guide/
 ## 本地运行
 
 你需要在你的系统上安装如下软件:
-- [Node.js v12+](https://nodejs.org/)
+
+- [Node.js v12+](https://nodejs.org/)  
 - [Yarn v1 classic](https://classic.yarnpkg.com/en/) (npm install --global yarn)
 
 如需本地测试运行此网站，请运行如下命令:
-```
+  
+``` cmd
 git clone https://github.com/Ph0sphorW/ios.cfw.guide/.git --recursive
 cd ios.cfw.guide
 yarn install
 yarn dev
 ```
+
 以将 Markdown 文件转译为 HTML 并在 http://127.0.0.1:8080 上运行本地服务器。
 
 ## 构建网站
@@ -27,5 +30,7 @@ yarn dev
 ## 翻译本站
 
 如需帮助 ios.cfw.guide 本地化，请到其 [Crowdin project](https://crowdin.com/project/ioscfwguide) 进行翻译而不是在上游仓库打开拉取请求。
+
+虽然但是，这个效率真的很低……
 
 如需帮助本仓库进行翻译，请直接 PR，无需使用 Crowdin。

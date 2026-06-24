@@ -59,7 +59,7 @@ extra_contributors:
 
 ## 安装 TrollStore
 
-1. 打开 `提示` 
+1. 打开 `提示`  
 1. 点击 `Install TrollStore`
 
 你的设备应该会刷新，然后 TrollStorre 就安装在你的设备上了。

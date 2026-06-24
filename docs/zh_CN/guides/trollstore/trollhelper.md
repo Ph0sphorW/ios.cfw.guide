@@ -27,7 +27,7 @@ extra_contributors:
 
 1. 在你的包管里搜索 `TrollStore Helper` 包
 1. 安装之后关闭包管，可以在桌面上找到 `TrollHelper`
-1. 打开 `TrollHelper` 
+1. 打开 `TrollHelper`  
 1. 点击 `Install TrollStore`
 
 你的设备应该会刷新，之后 TrollStore 就会安装在你的设备上了。

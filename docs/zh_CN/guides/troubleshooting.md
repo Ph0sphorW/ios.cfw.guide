@@ -1,7 +1,7 @@
 ---
 lang: zh_CN
-title: "Troubleshooting"
-description: Fixing common issues on jailbroken devices.
+title: "故障排除"
+description: 解决越狱设备上的常见问题
 permalink: /zh_CN/troubleshooting
 extra_contributors:
   - iCrazeiOS
@@ -12,341 +12,345 @@ extra_contributors:
   - Superuser
 ---
 
-## Bootloops and respring loops
+## 启动循环和重启循环
 
-### Respring Loops
+### 刷新循环
 
-A respring loop is a symptom of an incompatible tweak(s), causing the device to be stuck in resprings while in a jailbroken state. 
+刷新循环是由于安装了不兼容的插件导致的症状，使设备在越狱状态下陷入不断重新加载桌面的循环。
 
-While there is no easy way to diagnose what causes a respring loop, the most likely culprit is your most recently installed/updated tweak being incompatible with your iOS version or another tweak.
+虽然很难诊断刷新循环的具体原因，但最可能的罪魁祸首是你最近安装/更新的插件与你的 iOS 版本或其他插件不兼容。
 
-#### Semi-(un)tethered jailbreaks
-
-::: tip
-
-A semi-tethered jailbreak is a jailbreak that needs an app on a computer in order to jailbreak after a reboot.
-
-A semi-untethered jailbreak is a jailbreak that needs an app that is installed on the device or website in order to jailbreak after a reboot.
-
-:::
-
-In order to escape the respring loop, [force reboot your device](#How-to-exit-dfu-mode). Once you've booted back up, use your jailbreak of choice and disable tweak injection from the jailbreak settings. Once you've jailbroken, you should be able to access your package manager and remove your most recent tweak or your last tweak setting change that may have caused the respring loop. 
-
-In a worst case scenario, where you cannot diagnose or fix the issue, ask for support in the [r/jailbreak discord server](https://discord.gg/jb) or restore rootFS.
-
-#### Untethered jailbreaks
+#### 半连接/半完全越狱
 
 ::: tip
 
-A untethered jailbreak is a jailbreak that persists after a reboot
+半连接越狱是指重启后需要借助电脑上的应用来重新越狱。
+
+半完全越狱是指重启后需要借助设备上安装的应用或网站来重新越狱。
 
 :::
 
-A respring loop on an untethered jailbreak is very easy to confuse with a bootloop, since even restarting your device will keep you in the respring loop.
+要摆脱刷新循环，请[强制重启你的设备](#如何退出-dfu-模式)。重启后，使用你选择的越狱工具，在越狱设置中禁用插件注入。成功越狱后，你应该能够访问你的包管理器，移除最近安装的插件或最近更改的可能导致刷新循环的插件设置。
 
-In order to escape a potential respring loop, you must [forcefully reboot](#How-to-exit-dfu-mode) your device and hold Volume Up, as the timing varies depending on jailbreaks, your best bet is to hold Volume Up until you've booted into iOS. 
+在最坏的情况下，如果你无法诊断或修复问题，请在 [r/jailbreak Discord 服务器](https://discord.gg/jb)上寻求帮助，或恢复根文件系统。
 
-Even after you've attempted to do this multiple times, you may find that you cannot boot into iOS while holding volume up; you may be in a [bootloop](#Bootloops). 
+#### 完美越狱
 
-### Bootloops
+::: tip
 
-A bootloop is an unrecoverable error caused by either corrupted system files or a hardware failure. While much rarer in modern iOS versions, it is still possible to bootloop your device through accidental or intentional means. 
+完美越狱是指重启后仍然保持越狱状态而无需重新越狱的状态。
 
-A bootloop can be diagnosed by looking for a constant re-occuring Apple logo, even after you've forcefully rebooted your device. 
+:::
 
-In order to escape from a bootloop, you must DFU restore your device. 
+完美越狱上的刷新循环很容易与启动循环混淆，因为即使重启设备，你仍然会处于刷新循环中。
 
-## How to enter DFU mode
+要摆脱可能的刷新循环，你必须[强制重启](#如何退出-dfu-模式)设备并按住音量加键，具体时机因越狱工具而异，最好的办法是按住音量加键直到进入 iOS。
 
-#### For devices with a real home button (iPhone 6s and below):
+即使你多次尝试，可能会发现按住音量加键也无法进入 iOS；此时你可能陷入了[启动循环](#启动循环)。
 
-1. Hold down both the Home button and Lock button.
-1. After 8 seconds, release the Lock button while continuing to hold down the Home button.
+### 启动循环
+
+启动循环是由系统文件损坏或硬件故障引起的不可恢复的错误。虽然在现代 iOS 版本中较为罕见，但仍有通过意外或故意手段导致设备启动循环的可能。
+
+启动循环的特征是即使强制重启后，Apple 标志仍不断反复出现。
+
+要解决启动循环，你必须对设备进行 DFU 恢复。
+
+## 如何进入 DFU 模式
+
+#### 带有实体 Home 键的设备（iPhone 6s 及以下
+
+1. 同时按住 Home 键和锁屏键。
+1. 8 秒后，松开锁屏键，继续按住 Home 键。
   
-#### For iPhone 7/7+, iPod 7th Gen and 2018 iPads: 
+#### iPhone 7/7+、iPod 第 7 代和 2018 年款 iPad
 
-1. Power on your iPhone/iPad if it's not on already
-1. Connect it to your computer with your cable
-1. Launch iTunes (or Finder on macOS Catalina and newer) and check that the iPhone/iPad is recognised
-1. Hold down both the Side button and Volume Down button.
-1. After 8 seconds, release the Side button while continuing to hold down the Volume Down button.
+1. 如果设备尚未开机，请先开机
+1. 使用数据线将其连接到电脑
+1. 启动 iTunes（或 macOS Catalina 及更新版本上的 Finder），确认 iPhone/iPad 已被识别
+1. 同时按住侧边键和音量减键。
+1. 8 秒后，松开侧边键，继续按住音量减键。
 
-#### For devices without a home button, iPhone 8/8+, iPad Air 5 and iPad Mini 6:
+#### 无 Home 键的设备、iPhone 8/8+、iPad Air 5 和 iPad Mini 6
 
-1. Power on your iPhone/iPad if it's not on already
-1. Connect it to your computer with your cable
-1. Launch iTunes (or Finder on macOS Catalina and newer) and check that the iPhone/iPad is recognised
-1. Press the Volume Up button immediately followed by the Volume Down button
-1. Press and hold down the Power button until the screen turns black
-1. Release the Power button
-1. Hold down the Power button and the Volume Down button for immediately after for 5 seconds
-1. Release the Power button but keep holding down the Volume Down button for another 5 seconds
+1. 如果设备尚未开机，请先开机
+1. 使用数据线将其连接到电脑
+1. 启动 iTunes（或 macOS Catalina 及更新版本上的 Finder），确认 iPhone/iPad 已被识别
+1. 快速按下音量加键，然后立即按下音量减键
+1. 按住电源键直到屏幕变黑
+1. 松开电源键
+1. 立即同时按住电源键和音量减键 5 秒钟
+1. 松开电源键，继续按住音量减键再 5 秒钟
 
-## How to exit DFU mode
+## 如何退出 DFU 模式
 
-#### For devices with a real home button (iPhone 6s and below):
+#### 带有实体 Home 键的设备（iPhone 6s 及以下）
 
-Hold the Home button and the Lock button until the device reboots.
+同时按住 Home 键和锁屏键，直到设备重启。
 
-#### For iPhone 7/7+, iPod 7th Gen and 2018 iPads:
+#### iPhone 7/7+、iPod 第 7 代和 2018 年款 iPad
 
-Hold down the Side button and Volume Down button until the device reboots.
+同时按住侧边键和音量减键，直到设备重启。
 
-#### For devices without a home button, iPhone 8/8+, iPad Air 5 and iPad Mini 6:
+#### 无 Home 键的设备、iPhone 8/8+、iPad Air 5 和 iPad Mini 6
 
-1. Quick-press the Volume Up button 
-2. Quick-press the Volume Down button
-3. Hold down the Side button until the device reboots.
+1. 快速按下音量加键
+2. 快速按下音量减键
+3. 按住侧边键，直到设备重启。
 
-## Common Errors on Chimera, Odyssey, and Taurine
+## Chimera、Odyssey 和 Taurine 的常见错误
 
 ### ERR_Jailbreak
 
 ::: danger
 
-If you are seeing this issue while using taurine-permanent, follow [ERR_Jailbreak when using taurine-permanent](#ERR_Jailbreak-when-using-taurine-permanent) instead.
+如果你在使用 taurine-permanent 时遇到此问题，请转而参考[使用 taurine-permanent 时出现 ERR_Jailbreak](#使用-taurine-permanent-时出现-err_jailbreak)。
 
 :::
 
-This is caused by you having used a previous jailbreak. To solve this, you need to restore rootfs:
+这是由于你之前使用过其他越狱工具导致的。要解决此问题，你需要恢复根文件系统：
 
-1. Reboot the device.
-1. Open the Odyssey or Taurine app, depending on your iOS version.
-1. Toggle the `Restore Rootfs` option
-1. Press the Jailbreak button.
+1. 重启设备。
+1. 根据你的 iOS 版本打开 Odyssey 或 Taurine 应用。
+1. 开启 `恢复根文件系统` 选项
+1. 点击越狱按钮。
 
-Once the restore rootfs successfully completes, try jailbreaking again.
+恢复根文件系统成功后，请再次尝试越狱。
 
-### ERR_Already_Jailbroken and ERR_KernRW (Taurine)/ERR_TFP0 (Odyssey)
-`ERR_Already_Jailbroken` indicates that the jailbreak process was interrupted. `ERR_KernRW` and `ERR_TFP0` indicate that the exploit failed. Both can be solved in the same way:
+### ERR_Already_Jailbroken 和 ERR_KernRW（Taurine）/ ERR_TFP0（Odyssey）
 
-1. Reboot the device.
-1. Open the Odyssey or Taurine app, depending on your iOS version.
-1. Press the Jailbreak button.
+`ERR_Already_Jailbroken` 表示越狱过程被中断。`ERR_KernRW` 和 `ERR_TFP0` 表示漏洞利用失败。两者都可以用同样的方法解决：
+
+1. 重启设备。
+1. 根据你的 iOS 版本打开 Odyssey 或 Taurine 应用。
+1. 点击越狱按钮。
 
 ::: tip
 
-Jailbreaks are hardly ever 100% successful, you may need to re-attempt running the jailbreak multiple times
+越狱很少能 100% 成功，你可能需要多次重新尝试运行越狱工具。
 
 :::
 
-### "Installation Error" upon opening Sileo after initially jailbreaking on Odyssey 1.4.2
+### 在 Odyssey 1.4.2 上首次越狱后打开 Sileo 时出现"Installation Error"
 
-Remove the currently installed version of Odyssey, sideload the [latest version of Odyssey](https://theodyssey.dev), and then restore rootfs and then rejailbreak.
+移除当前安装的 Odyssey 版本，侧载[最新版本的 Odyssey](https://theodyssey.dev)，然后恢复根文件系统并重新越狱。
 
-### Unable to open NewTerm or Cr4shed (among other things) after a period of time on Taurine
+### 在 Taurine 上使用一段时间后无法打开 NewTerm 或 Cr4shed（以及其他应用）
 
 ::: tip
 
-If you're on 14.3 and later *or* have an A12 or newer device, you likely either rebooted (which would mean you're no longer in a jailbroken state) or you may have something else causing issues entirely unrelated to the jailbreak.
+如果你使用的是 14.3 及更高版本，*或者*拥有 A12 或更新设备，很可能是你重启了设备（这意味着你不再处于越狱状态），或者可能出现了与越狱完全无关的其他问题。
 
 :::
 
-If you're on 14.0 to 14.2 *and* have A11 or earlier device, this issue is caused by the fact that some tweaks and apps use libaries which have components that may run before the jailbreak is able to stop codesigning. When this happens, affected tweaks and apps cannot be used.
+如果你使用的是 14.0 到 14.2 版本，*并且*拥有 A11 或更早设备，此问题是由于某些插件和应用使用的库中包含可能在越狱工具停止代码签名之前运行的组件。发生这种情况时，受影响的插件和应用将无法使用。
 
-The easiest solution to this issue is to reboot and rejailbreak when this issue happens. Alternatively, if you do not want this issue to happen, you can jailbreak with <router-link to="/installing-odysseyra1n">Odysseyra1n</router-link>, as Taurine and Odysseyra1n are both intercompatible with eachother, and Odysseyra1n is not affected by this issue.
+此问题最简单的解决方案是重启设备并重新越狱。如果你不希望出现此问题，可以使用 <router-link to="/installing-odysseyra1n">Odysseyra1n</router-link> 越狱，因为 Taurine 和 Odysseyra1n 相互兼容，而且 Odysseyra1n 不受此问题影响。
 
-### ERR_Jailbreak when using taurine-permanent
+### 使用 taurine-permanent 时出现 ERR_Jailbreak
 
-Update to the latest version of taurine-permanent.
+更新到最新版本的 taurine-permanent。
 
-### Sileo not appearing upon initially jailbreaking on Chimera 1.6.1 or Taurine 1.1.2
+### 在 Chimera 1.6.1 或 Taurine 1.1.2 上首次越狱后 Sileo 未出现
 
-- If you are having this issue on Chimera, get the [latest version of Chimera](https://chimera.coolstar.org/)
-- If you are having this issue on Taurine, get the [latest version of Taurine](https://taurine.app/)
+- 如果你在 Chimera 上遇到此问题，请获取[最新版本的 Chimera](https://chimera.coolstar.org/)
+- 如果你在 Taurine 上遇到此问题，请获取[最新版本的 Taurine](https://taurine.app/)
 
-## Common Errors on unc0ver
+## unc0ver 的常见错误
 
-### General issues with unc0ver on iOS 14
+### unc0ver 在 iOS 14 上的常见问题
 
 ::: tip
 
-While these issues are generally the most frequent on iOS 14, some issues could be present even on earlier versions of iOS
+虽然这些问题在 iOS 14 上最为常见，但部分问题也可能出现在更早的 iOS 版本上。
 
 :::
 
-While using unc0ver on iOS 14, it is very common to run into the following issues:
-  - Apps hanging when trying to launch them
-  - Various app store related issues (including the inability to download apps or make in-app purchases)
-  - Being unable to receive phone calls while jailbroken
-  - Having issues utilizing cellular data (such as being unable to load web pages or other online services)
-  - Being unable to save, take, or view screenshots
-  - Safari not loading pages, or reloading pages infinitely
-  - The share sheet not functioning properly
-  - Issues connecting to Carplay.
+在 iOS 14 上使用 unc0ver 时，经常会遇到以下问题：
+    - 尝试启动应用时卡住
+    - 各种与应用商店相关的问题（包括无法下载应用或进行应用内购买）
+    - 越狱状态下无法接听电话
+    - 使用蜂窝数据时出现问题（例如无法加载网页或其他在线服务）
+    - 无法保存、拍摄或查看截屏
+    - Safari 无法加载页面，或无限重新加载页面
+    - 分享菜单无法正常工作
+    - 连接 Carplay 时出现问题。
 
 ::: warning
 
-If you are using Fugu14 to have unc0ver be permanently signed, you may experience these issues to a larger extent, as well as some Fugu14 exclusive issues, such as:
-  - The inability to view battery statistics
-  - More frequent and random kernel panics
+如果你使用 Fugu14 对 unc0ver 进行永久签名，可能会更频繁地遇到这些问题，以及一些 Fugu14 特有的问题，例如：
+    - 无法查看电池统计信息
+    - 更频繁和随机发生的内核崩溃
 
 :::
 
-To **temporarily** resolve these issues, userspace reboot by typing `launchctl reboot userspace` into a terminal app (e.g. NewTerm) on your device.
+要**临时**解决这些问题，请在设备上的终端应用（例如 NewTerm）中输入 `launchctl reboot userspace` 进行用户空间重启。
 
-### rootFS already mounted
+### 根文件系统已挂载
 
-1. Open the Settings application
-1. Go to `General` -> `iX Storage`
-    - This could be `iPhone Storage`, `iPad Storage` or `iPod Storage`
-1. Scroll to the System Update downloaded and tap on it
-1. Tap `Delete`
-1. Re-run unc0ver
+1. 打开"设置"应用
+1. 进入 `通用` -> `iPhone 存储空间`
+    - 可能显示为`iPhone 存储空间`、`iPad 存储空间`或`iPod 存储空间`
+1. 滚动到已下载的系统更新并点击它
+1. 点击`删除`
+1. 重新运行 unc0ver
 
-If this doesn't fix it, or there is no update downloaded, you may need to download the OTA update and delete it again. Try the following instructions:
+如果这样无法解决，或者没有已下载的更新，你可能需要下载 OTA 更新后再删除。请尝试以下步骤：
 
-1. Open the unc0ver application
-1. Tap on the settings icon in the top right-hand corner
-2. Uncheck all the options
-3. Enable `Restore RootFS`
-4. Press `Done` in the top right-hand corner
-5. Go to the jailbreak tab and press `Restore RootFS`
-    - If the button says `Jailbreak`, go back and check to see if `Restore RootFS` is the only option enabled
-1. When prompted about restoring, tap `OK`
-    - This may take some time
-    - If it fails, try again from the beginning
-1. When finished, tap `OK` again, and your device will restart
-1. Open the Settings application
-1. Go to `General` -> `Software Update`
-1. Download the software update but **do not install it**
-1. Go back to `General`
-1. Once downloaded, go to `iX Storage` like before
-    - This could be `iPhone Storage`, `iPad Storage` or `iPod Storage`
-1. Scroll to the System Update downloaded and tap on it
-1. Tap `Delete`
-1. Scroll to the unc0ver application and tap on it
-1. Tap `Delete`
-1. [Install unc0ver](/installing-unc0ver) again like before but don't run it yet
-1. Turn on Airplane Mode and run the jailbreak now
-    - This may take several attempts, keep trying until it works
+1. 打开 unc0ver 应用
+1. 点击右上角的设置图标
+2. 取消勾选所有选项
+3. 启用 `恢复根文件系统`
+4. 点击右上角的 `Done`
+5. 前往越狱选项卡，点击 `恢复根文件系统`
+    - 如果按钮显示为 `Jailbreak`，请返回检查是否只启用了 `恢复根文件系统` 选项
+1. 当提示恢复时，点击 `OK`
+    - 这可能需要一些时间
+    - 如果失败，请从头重新尝试
+1. 完成后，再次点击 `OK`，设备将重启
+1. 打开"设置"应用
+1. 进入 `通用` -> `软件更新`
+1. 下载软件更新，但**不要安装它**
+1. 返回 `通用`
+1. 下载完成后，像之前一样进入 `iPhone 存储空间`
+    - 可能显示为`iPhone 存储空间`、`iPad 存储空间`或`iPod 存储空间`
+1. 滚动到已下载的系统更新并点击它
+1. 点击`删除`
+1. 滚动到 unc0ver 应用并点击它
+1. 点击`删除`
+1. 像之前一样重新[安装 unc0ver](/installing-unc0ver)，但暂时不要运行它
+1. 打开飞行模式，然后运行越狱
+    - 这可能需要多次尝试，请持续尝试直到成功
 
 ::: tip
 
-If this doesn't work, ask on the r/Jailbreak [Discord Server](https://discord.gg/jb) for support.
+如果这不起作用，请在 r/Jailbreak [Discord 服务器](https://discord.gg/jb)上寻求帮助。
 
 :::
 
-### Not being able to rejailbreak or restore rootfs in unc0ver after using tweaks such as Batchomatic or IAmLazy
+### 使用 Batchomatic 或 IAmLazy 等插件后无法在 unc0ver 中重新越狱或恢复根文件系统
 
-Your ability to fix this issue if you end up in this state depends on your iOS version:
+如果你陷入此状态，能否修复此问题取决于你的 iOS 版本：
 
-- If you are on iOS versions at or below 14.3 (excluding if you're on 11.x or are A12(X) 12.1.3-12.4.1), follow another jailbreak's <router-link to="/restoring-rootfs">Restoring Rootfs</router-link> method that is supported on your device/version combination.
-- If you are on iOS versions 14.4 to 14.5.1, attempt to restore rootfs in the Fugu14 app
-- If you are either on iOS versions 14.6 to 14.8, or in the group excluded from the first group, your only options are to wait for another jailbreak, wait for an unc0ver update which fixes this issue, or to DFU Restore to the latest iOS version and lose your ability to jailbreak for the forseeable future
+- 如果你使用的是 14.3 及以下版本的 iOS（不包括 11.x 或 A12(X) 12.1.3-12.4.1），请按照其他越狱工具的<router-link to="/restoring-rootfs">恢复根文件系统</router-link>方法来操作，前提是该工具支持你的设备/版本组合。
+- 如果你使用的是 iOS 14.4 到 14.5.1，请尝试在 Fugu14 应用中恢复根文件系统。
+- 如果你使用的是 iOS 14.6 到 14.8，或者属于第一组中排除的设备，你唯一的选择是等待其他越狱工具、等待修复此问题的 unc0ver 更新，或者 DFU 恢复到最新的 iOS 版本并在相当长一段时间内失去越狱能力。
 
 
-## Fixing package installation errors on Sileo
+## 修复 Sileo 上的软件包安装错误
 
-For the purposes of this troubleshooting section, we are assuming you are running Sileo on Taurine/Odyssey/Odysseyra1n.
+在本故障排除部分，我们假设你在 Taurine/Odyssey/Odysseyra1n 上运行 Sileo。
 
-In order to determine which error you are encountering, you will have to tap `Show Details` in Sileo when you encounter an error with installing or removing a package.
+要确定你遇到的错误类型，请在 Sileo 中安装或移除软件包遇到错误时点击`显示详情`。
 
-If the fixes below don't help, feel free to ask on the Sileo [Discord Server](https://discord.gg/Sileo) for support.
+如果以下修复方法没有帮助，请随时在 Sileo [Discord 服务器](https://discord.gg/Sileo)上寻求帮助。
 
-### Syntax error: "(" unexpected
-This error indicates that the developer of the tweak you are trying to install/remove has written the installation/removal script incorrectly. You will need Filza to fix this issue.
+### 语法错误："(" 意外的符号
+此错误表示你要安装/移除的插件开发者在编写安装/移除脚本时出现了错误。你需要使用 Filza 来解决此问题。
 
-#### Removing the tweak causing this error
-1. Open Filza and navigate to `/Library/dpkg/info`
-1. Find the .postinst or .postrm file corresponding to the tweak with an error, e.g. `com.miro.shortmoji2.postinst` would be the file to edit if ShortMoji 2 had an install error or `com.miro.shortmoji2.postrm` if it had an uninstall error
-1. Tap and hold the file until a menu appears
-1. Tap `Open with`
-1. Tap `Text Editor`
-1. Find the first line of the file that says `#!/bin/sh`
-1. Change `sh` to `bash`
-1. Tap `Save`
-1. Open Sileo
-1. Uninstall the tweak.
-   - For paid tweaks, you will need to file a bug report to the developer if you wish to install the tweak.
-   - For free tweaks, you should file a bug report to the developer. If you wish to install the tweak immediately, continue with this guide.
+#### 移除导致此错误的插件
 
-#### Editing the tweak to fix the error (Free tweaks only)
-1. Open [Parcility](https://parcility.co) in Safari on your device
-1. Search for the tweak you wish to install
-   - If it does not appear in the search, you will have to wait for the developer to update their tweak
-1. Tap `Download`
-1. Once the file has finished downloading, tap on the file in Safari's downloads menu
-1. Tap the share button
-1. Tap `Save to Filza`
-1. Tap `Save`
-1. Open Filza, it will open to the folder where you downloaded the tweak file
-1. Tap on the tweak you wish to fix
-1. Scroll down and tap `Extract`
-1. Open the result folder, and navigate to `DEBIAN`
-1. Repeat steps 2-8 of `Removing the tweak causing this error` above
-1. Navigate back to the folder where you downloaded the tweak
-1. Tap and hold on the tweak folder
-1. Tap on `Create DEB`
-1. Tap and hold on the resulting deb file
-1. Tap `Open with`
-1. Tap on `Sileo`
-1. Tap `Get`
+1. 打开 Filza 并导航到 `/Library/dpkg/info`
+1. 找到与出错插件对应的 .postinst 或 .postrm 文件，例如如果 ShortMoji 2 出现安装错误，需要编辑的文件是 `com.miro.shortmoji2.postinst`；如果是卸载错误，则是 `com.miro.shortmoji2.postrm`
+1. 长按该文件直到出现菜单
+1. 点击`打开方式`
+1. 点击`文本编辑器`
+1. 找到文件第一行内容 `#!/bin/sh`
+1. 将 `sh` 改为 `bash`
+1. 点击`保存`
+1. 打开 Sileo
+1. 卸载该插件
+   - 对于付费插件，如果你希望安装该插件，需要向开发者提交错误报告
+   - 对于免费插件，你应该向开发者提交错误报告。如果你希望立即安装该插件，请继续按照本指南操作
+
+#### 编辑插件以修复错误（仅限免费插件）
+
+1. 在设备的 Safari 中打开 [Parcility](https://parcility.co)
+1. 搜索你要安装的插件
+   - 如果搜索结果中未出现，你需要等待开发者更新他们的插件
+1. 点击`下载`
+1. 文件下载完成后，在 Safari 的下载菜单中点击该文件
+1. 点击分享按钮
+1. 点击`保存到 Filza`
+1. 点击`保存`
+1. 打开 Filza，它将打开到你下载插件文件的文件夹
+1. 点击你要修复的插件
+1. 向下滚动并点击`解压`
+1. 打开结果文件夹，并导航到 `DEBIAN`
+1. 重复上面"移除导致此错误的插件"中的步骤 2-8
+1. 导航回下载插件的文件夹
+1. 长按插件文件夹
+1. 点击`创建 DEB`
+1. 长按生成的 deb 文件
+1. 点击`打开方式`
+1. 点击 `Sileo`
+1. 点击`获取`
 
 ::: tip
 
-Some developers in the Jailbreak community put a call to the wrong shell in their installation/removal scripts. Until April 2021, most Jailbreaks pointed `/bin/sh` to `/bin/bash` so developers were able to use `#!/bin/sh` to indicate which shell to use even if they use Bash features. In April 2021, Procursus, which runs on Chimera, Odyssey, Taurine, and Odysseyra1n, changed to a different, higher performance shell. This broke these incorrectly formatted scripts.
+越狱社区的一些开发者在他们的安装/移除脚本中调用了错误的 shell。在 2021 年 4 月之前，大多数越狱工具将 `/bin/sh` 指向 `/bin/bash`，因此开发者即使使用了 Bash 特性，也可以使用 `#!/bin/sh` 来指定使用的 shell。2021 年 4 月，运行在 Chimera、Odyssey、Taurine 和 Odysseyra1n 上的 Procursus 切换到了另一个性能更高的 shell，这导致了这些格式不正确的脚本出现问题。
 
 :::
 
-### Exec format error
-This error indicates that the developer of the tweak you are trying to install/remove has omitted a key part of the installation/removal script. You will need Filza to fix this issue.
+### 执行格式错误
 
-#### Removing the tweak causing this error
-1. Open Filza and navigate to `/Library/dpkg/info`
-1. Find the .postinst or .postrm file corresponding to the tweak with an error, e.g. `com.miro.shortmoji2.postinst` would be the file to edit if ShortMoji 2 had an install error
-1. Tap and hold the file until a menu appears.
-1. Tap `Open with`
-1. Tap `Text Editor`
-1. Add a new line to the start of the file that says `#!/bin/bash`.
-1. Tap `Save`
-1. Open Sileo
-1. Uninstall the tweak.
-1. Navigate to the `Sources` tab
-1. Swipe down and refresh your sources
-1. Navigate to the `Search` tab
-1. Type `libiosexec1` into the Search field
-1. Install `libiosexec1` by Hayden Seay
-1. Try installing the tweak causing an error again
+此错误表示你要安装/移除的插件开发者在安装/移除脚本中遗漏了关键部分。你需要使用 Filza 来解决此问题。
+
+#### 移除导致此错误的插件
+
+1. 打开 Filza 并导航到 `/Library/dpkg/info`
+1. 找到与出错插件对应的 .postinst 或 .postrm 文件，例如若 ShortMoji 2 出现安装错误，需要编辑 `com.miro.shortmoji2.postinst`
+1. 长按该文件直到出现菜单
+1. 点击`打开方式`
+1. 点击`文本编辑器`
+1. 在文件开头添加一行新内容：`#!/bin/bash`
+1. 点击`保存`
+1. 打开 Sileo
+1. 卸载该插件
+1. 导航到`来源`选项卡
+1. 向下滑动刷新你的软件源
+1. 导航到`搜索`选项卡
+1. 在搜索栏中输入 `libiosexec1`
+1. 安装 Hayden Seay 的 `libiosexec1`
+1. 再次尝试安装导致错误的插件
 
 ::: tip
 
-In May 2021, Procursus attempted to migrate to a version of dpkg that no longer handles this install error, as developers should have included the `#!/bin/sh` or `#!/bin/bash` calls in their scripts. At the time of writing, the lead developer of Procursus has created a patch, `libiosexec`, that re-adds this error handling. If you still encounter this error, you may not have updated for a while.
+2021 年 5 月，Procursus 尝试迁移到某个版本的 dpkg，该版本不再处理此安装错误，因为开发者本应在脚本中包含 `#!/bin/sh` 或 `#!/bin/bash` 调用。在撰写本文时，Procursus 的首席开发者创建了一个补丁 `libiosexec`，重新添加了此错误处理。如果你仍然遇到此错误，可能是你有一段时间没有更新了。
 
 :::
 
-#### nitoTV issues
+#### nitoTV 问题
 
-#### The application doesn't launch
+#### 应用无法启动
 
-1. If nitoTV fails to open while clicking on the application, this could be the result of the device being in an unjailbroken state. This occurs when the Apple TV reboots or has been shut down and powered back on.
-1. Reinitiating the jailbreak it will bring nitoTV back to full functionality. This could be via checkra1n or by launching any of the other jailbreaks tools and clicking `Jailbreak`.
+1. 如果点击 nitoTV 应用后无法打开，可能是因为设备处于未越狱状态。这种情况通常发生在 Apple TV 重启或关机后重新开机时。
+1. 重新执行越狱将使 nitoTV 恢复全部功能。这可以通过 checkra1n 或启动其他越狱工具并点击`Jailbreak`来完成。
 
-#### It fails to install/download/search for updates
+#### 无法安装/下载/搜索更新
 
-1. Open nitoTV and navigate to the `Sources` tab at the top bar and highlight the `nitoTV` repository. 
-1. Click and hold the trackpad button for one second then releasing will prompt to remove the repository. 
-1. Once deleted, click `Add` and enter the following repositoy URL: [`https://nitosoft.com/checkra1n/`] then click `Okay`. 
-1. After a few moments, the repository should show on the list. 
-1. Once done, initiate the app multitasker and swipe up on nitoTV to terminate the app, then relaunch nitoTV from the homescreen.
+1. 打开 nitoTV，导航到顶部栏的`来源`选项卡，高亮选择 `nitoTV` 软件源。
+1. 点击并按住触控板按钮约一秒钟，然后松开，系统将提示移除该软件源。
+1. 删除后，点击`添加`，输入以下软件源 URL：[`https://nitosoft.com/checkra1n/`]，然后点击`确定`。
+1. 稍等片刻，该软件源应会显示在列表中。
+1. 完成后，调出应用多任务切换界面，向上滑动 nitoTV 以终止该应用，然后从主屏幕重新启动 nitoTV。
 
-#### nitoTV crashes when adding new repositories
+#### nitoTV 在添加新软件源时崩溃
 
-1. Open nitoTV and navigate to the `Installed` tab at the top bar and highlight `nitoTV`. 
-1. Click `Modify` below the app name and select `Downgrade` then choose the selected version that works best. 
-1. Another possible way to fix this issue is to log in via SSH. 
-1. This can be done by locating your Apple TV Devices IP address and using the command `ssh root@Apple TV IP Address` then using `alpine` as the password to log in.
-1. After logging in, type in the following command to add the repository of your choice: `echo deb URL_ADDRESS > /etc/apt/sources.list.d/sources.list`
+1. 打开 nitoTV，导航到顶部栏的`已安装`选项卡，高亮 `nitoTV`。
+1. 点击应用名称下方的`修改`，选择`降级`，然后选择最适合的版本。
+1. 另一种可能的修复方法是通过 SSH 登录。
+1. 找到你的 Apple TV 设备的 IP 地址，使用命令 `ssh root@Apple TV IP 地址`，然后使用 `alpine` 作为密码登录。
+1. 登录后，输入以下命令来添加你选择的软件源：`echo deb URL_ADDRESS > /etc/apt/sources.list.d/sources.list`
 
-#### Issues with respringing
+#### 重新加载桌面时的问题
 
-1. In some occurances, nitoTV will need to be terminated from the multitasker window. This is done by pressing the TV button twice on the Siri Remote.
+1. 在某些情况下，需要从多任务窗口终止 nitoTV。这可以通过在 Siri Remote 上按两次 TV 按钮来完成。
 
-#### Apps won't appear
+#### 应用不显示
 
-1. A simple respring can fix these odd situations. 
-1. Double-check the console log on the top bar of nitoTV and select `Settings`.
-1. From there, click `View Log` 
+1. 简单的重新加载桌面可以解决这些奇怪的情况。
+1. 仔细检查 nitoTV 顶部栏的控制台日志，选择`设置`。
+1. 然后点击`查看日志`
 
-for any errors and feel free to join the `tvos-jailbreaks` discord channel for further guidance.
-
+查看是否有任何错误，并随时加入 `tvos-jailbreaks` Discord 频道以获取进一步指导。

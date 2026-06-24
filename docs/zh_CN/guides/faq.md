@@ -1,7 +1,7 @@
 ---
 lang: zh_CN
-title: "FAQ"
-description: Frequently asked questions on jailbroken devices.
+title: "常见问题"
+description: 越狱设备上的常见问题解答
 permalink: /zh_CN/faq
 redirect_from:
   - /zh-CN/help/faq
@@ -11,118 +11,118 @@ extra_contributors:
   - BurritoSOFTWARE
 ---
 
-## General Questions
+## 常见问题
 
-### What is jailbreaking?
+### 什么是越狱？
 
-Jailbreaking is a term used to describe the process that allows you to truly unlock the potential of your iOS device. Apple's mobile operating system is known for its security and that's partly because of how locked-down it is. Jailbreaking your device will allow you to break those restrictions and customize your device to how you like it.
+越狱是一个术语，用于描述让你真正解放 iOS 设备能力的过程。Apple 的移动操作系统以其*安全性*著称，部分原因在于它高度封闭。越狱设备可以打破这些限制，让你按照自己的喜好自定义你的设备。
 
-Jailbreaking gives you the ability to install custom applications and "tweaks" (modifications) from a package manager to customize and enhance the user experience. Jailbreaking is free and easy on most devices.
+越狱让你能够通过包管理器安装自定义应用和"插件"，以自定义和增强用户体验。在大多数设备上越狱不仅免费而且简单。
 
-### Is jailbreaking legal?
+### 越狱合法吗？
 
-Jailbreaking in the US is perfectly legal. In 2010, the US Copyright Office declared jailbreaking to be an exception to the Digital Millennium Copyright Act.
+在美国越狱是完全合法的。2010 年，美国版权局宣布越狱是《数字千年版权法》（DMCA）的一个例外项。
 
-You may want to check in your country whether it is legal there or not before proceeding, however in most countries it should be fine.
+在操作之前，你可能需要确认你所在国家 / 地区的法律规定，不过在大多数国家 / 地区应该都没问题。
 
-### What is a package manager?
+### 什么是包管理器？
 
-Package managers are used to install, uninstall and modify official or community-made software to customize your device. Sileo is an example of a package manager.
+包管理器用于安装、卸载和修改官方或社区制作的软件或插件，以自定义你的设备。Sileo 就是一个例子。
 
-They can be considered similar to the iOS App Store, where you can install both free and paid software.
+可以将它们类比 iOS 的 App Store；你可以在其中安装免费和付费的软件。
 
-### What's a repo?
+### 什么是软件源？
 
-These are essentially databases that contain lots of tweaks for you to install. When you add repos to your package manager, you will be able to install the tweaks contained on it, and look for them using the search function.
+软件源本质上是包含供你安装的大量插件的数据库。当你将软件源添加到包管理器后，就可以通过搜索功能查找其中的插件，并安装它们。
 
-### What are tweaks?
+### 什么是插件？
 
-Tweaks are small modifications that can be installed change the look and/or feel of your device.
+插件是可以安装的小型修改程序，用于改变设备的外观和 / 或使用体验。
 
-Unlike apps, tweaks usually don't come with an app icon, but rather instead an area in the Settings app to change how the tweak acts. Some simpler tweaks might not even have this.
+与应用不同，插件通常没有应用图标，但在"设置"应用中有一个专门区域来更改插件的行为方式。一些更简单的插件可能连设置项都没有。
 
-### What is "respringing" or "Restarting Springboard"?
+### 什么是"重新加载桌面"？
 
-Respringing is essentially restarting the home screen and the iOS UI. Most of the time, you can install a tweak and respring to apply it, without fully rebooting.
+重新加载桌面本质上就是重启主屏幕和 iOS 用户界面。大多数情况下，安装插件后只需重新加载桌面即可应用，无需完全重启。
 
-You won't have to reinstall an exploit after respringing, however, and you can remain jailbroken.
+重新加载桌面后，你无需重新安装越狱软件，并可以保持越狱状态。
 
-### What is Recovery Mode?
+### 什么是恢复模式？
 
-Recovery Mode is a protection built-in to your device that allows the user to completely start over with a fresh install of iOS. This is especially useful if the installed OS is damaged and cannot start properly, which can happen during jailbreaks, although rare. Entering recovery mode can be done on device and through a computer, and iTunes/Finder utilise recovery mode during normal upgrades and restores.
+恢复模式是设备内置的一种保护机制，允许用户通过安装全新的 iOS 系统来完全重置系统。当已安装的系统损坏且无法正常启动时（这在越狱过程中虽罕见但仍可能发生），这尤其有用。可以通过设备本身或电脑进入恢复模式，iTunes/访达 在正常的升级和恢复过程中也会使用恢复模式。
 
-### What is DFU mode?
+### 什么是 DFU 模式？
 
-DFU mode is a way you can interact with your iOS device without loading the operating system or boot loader. It stands for Device Firmware Upgrade. It's functionally different from recovery mode and is generally intended as a last resort in case things seriously go wrong on your device, however we can use it with <router-link to="/installing-odysseyra1n">Odysseyra1n</router-link> to jailbreak your device instead. Entering DFU mode can only be done on device as it is part of the phone itself.
+DFU 模式是一种**无需加载操作系统或引导加载程序**即可与 iOS 设备交互的方式，代表设备固件升级。它在功能上不同于恢复模式，通常作为设备出现严重问题时的最后手段。不过，我们也可以配合 <router-link to="/installing-odysseyra1n">Odysseyra1n</router-link> 使用它来使你的设备越狱。进入 DFU 模式只能通过设备本身操作，因为它是手机底层硬件的一部分。
 
-### What can I do once jailbroken?
+### 越狱后我能做什么？
 
-- Gain full access to your device's OS
-- Get access to a package manager, such as Sileo or Zebra
-- Install themes to change the look and feel of your device
-- Install tweaks to change how iOS behaves
+- 获得设备操作系统的完全访问权限（仅限有根越狱）
+- 使用包管理器（如 Sileo 或 Zebra）
+- 安装主题包以改变设备的外观和体验
+- 安装插件来改变 iOS 的行为模式
 
-### What should I know before starting?
+### 开始之前我应该了解什么？
 
-- It is **strongly** recommended to backup your device to iCloud, iTunes, or Finder (on macOS Catalina or newer) in case of data loss
-- If no issues occur during installation, you will be jailbroken without any data loss
-- Keep the device plugged into to a power source or keep the battery fairly charged, so that any unexpected power off can be prevented
-- Jailbreaking allows you to unlock your system but can lead to data loss if you damage the OS
-- You may be vulnerable to more malware and other security issues after jailbreaking compared to if you were in a non-jailbroken state
-- Your device warranty will become void after jailbreaking until it is restored to an un-jailbroken state, which is easy to do
+- **强烈建议**将设备备份到 iCloud、iTunes 或 Finder（macOS Catalina 或更新版本），以防数据丢失
+- 如果安装过程中没有出现问题，你将在不丢失任何数据的情况下完成越狱
+- 保持设备连接电源或保持电池电量充足，以防止意外断电
+- 越狱可以释放你设备的潜力，但如果操作系统损坏可能会导致数据丢失
+- 与非越狱状态相比，越狱后你可能更容易受到恶意软件和其他安全问题的攻击
+- 越狱后你的设备保修将失效，直到恢复到非越狱状态（这很容易做到）
 
-## Blob questions
+## 关于令牌的问题
 
-### What is a blob?
+### 什么是令牌？
 
-A blob is a file containing a special key specifically for that one device to allow downgrading to a specific firmware. 
+令牌是一个包含专门针对某台设备的特殊密钥的文件，用于允许降级到特定的固件版本。
 
-Blobs are like golden tickets, but instead a digital signature made by Apple that was saved at the time when the signing window was open. If you possess one (or many), keep them safe.
+令牌就像金券一样，不过它是 Apple 在签名窗口开放时保存的数字签名。如果你拥有一个（或多个）令牌，请妥善保管。
 
-### How do blobs work?
+### 令牌是如何工作的？
 
-Blobs can be used in a program named `futurerestore`, to restore to a firmware, provided the SEP (Secure Enclave Processor) firmware and the Baseband firmware are compatible with the target iOS version.
+令牌可以在名为 `futurerestore` 的程序中使用，以恢复到某个固件版本，前提是 SEP（安全隔区处理器）固件和基带固件与目标 iOS 版本兼容。
 
-Even though blobs may become incompatible for use of restoring at the current time, it is still advised to save them, in case an opportunity is made available which allows for their usage.
+尽管令牌在当前可能无法用于恢复，但仍建议保存它们，以防将来出现可以利用它们的机会。
 
-### Can I save them now?
+### 我现在可以保存它们吗？
 
-There are two sets of blobs which can be saved at the current time:
+目前可以保存两种类型的令牌：
 
-- Versions currently signed by Apple
-- The version you are currently on
+- Apple 当前已签名的版本
+- 你当前所在的版本
 
-Note that saving blobs for the version you are currently on is dependent on whether or not you have a jailbreak, and may or may not be usable depending on the device you have and how you got to the version you are on at that time.
+请注意，保存当前版本的令牌取决于你是否已越狱，并且根据你的设备和当时升级到该版本的方式，这些令牌可能可用也可能不可用。
 
-To see all the possible methods of saving blobs, follow the <router-link to="/saving-blobs">Saving Blobs</router-link> guide.
+要查看所有保存令牌的方法，请参阅<router-link to="/saving-blobs">保存令牌</router-link>指南。
 
-## Tweak related questions
+## 插件相关的问题
 
-### Should I use tweaks such as Batchomatic or IAmLazy
+### 我应该使用 Batchomatic 或 IAmLazy 这类插件吗？
 
-You should **not** use these tweaks, due to the fact that they tend to cause issues and instability within your jailbreaking setup. Instead, if you're switching between jailbreaks or updating to a newer iOS version, make a text based tweaklist and then manually reinstall them.
+你**不应该**使用这些插件，因为它们往往会在你的越狱环境中引起问题和稳定性故障。如果你需要在不同越狱工具之间切换或升级到更新的 iOS 版本，建议创建一个基于文本的插件列表，然后手动重新安装它们。
 
-## Other questions
+## 其他问题
 
-### What is the latest iOS version with a jailbreak for my 64-bit device
+### 我的 64 位设备上支持越狱的最新 iOS 版本是什么？
 
-While this can be easily figured out by checking <router-link to="/get-started">Get Started</router-link>, in case you don't want to go through get started, here is the following information:
+虽然可以通过查看<router-link to="/get-started">开始使用</router-link>轻松找到答案，但如果你不想一步步查看，以下是对应信息：
 
-- **A7 iPads**: iOS 12.5.7 (via Odysseyra1n or Chimera)
-- **A7/A8 iPhones**: iOS 12.5.7 (via Odysseyra1n or Chimera)
-- **iPod Touch (6th Generation)**: iOS 12.5.7 (via Odysseyra1n or Chimera)
-- **A8/A10X Apple TVs**: tvOS 18.1 (via palera1n)
-- **A8(X) iPads**: iPadOS 15.8.3 (via Dopamine or palera1n)
-- **iPod Touch (7th Generation)**: iOS 15.8.3 (via Dopamine or palera1n)
-- **A9/A10 iPhones**: iOS 15.8.3 (via Dopamine or palera1n)
-- **A9(X) iPads**: iPadOS 16.7.10 (via palera1n)
-- **iPad 6th Generation**: iPadOS 17.7.1 (via palera1n)
-- **iPad 7th Generation**: iPadOS 18.1 (via palera1n)
-- **A10X iPad Pros**: iPadOS 17.7.1 (via palera1n)
-- **A11 iPhones**: iOS 16.7.10 (via palera1n)
-- **A12-A14 iPhones**: iOS 16.5.1 (via Dopamine)
-- **A12-A14/M1 iPads**: iPadOS 16.5.1 (via Dopamine)
-- **A15/A16 iPhones**: iOS 16.5 (via Dopamine)
-- **A15/M2 iPads**: iPadOS 16.5 (via Dopamine)
+- **A7 iPad**：iOS 12.5.7（通过 Odysseyra1n 或 Chimera）
+- **A7/A8 iPhone**：iOS 12.5.7（通过 Odysseyra1n 或 Chimera）
+- **iPod Touch（第 6 代）**：iOS 12.5.7（通过 Odysseyra1n 或 Chimera）
+- **A8/A10X Apple TV**：tvOS 18.1（通过 palera1n）
+- **A8(X) iPad**：iPadOS 15.8.3（通过 Dopamine 或 palera1n）
+- **iPod Touch（第 7 代）**：iOS 15.8.3（通过 Dopamine 或 palera1n）
+- **A9/A10 iPhone**：iOS 15.8.3（通过 Dopamine 或 palera1n）
+- **A9(X) iPad**：iPadOS 16.7.10（通过 palera1n）
+- **iPad 第 6 代**：iPadOS 17.7.1（通过 palera1n）
+- **iPad 第 7 代**：iPadOS 18.1（通过 palera1n）
+- **A10X iPad Pro**：iPadOS 17.7.1（通过 palera1n）
+- **A11 iPhone**：iOS 16.7.10（通过 palera1n）
+- **A12-A14 iPhone**：iOS 16.5.1（通过 Dopamine）
+- **A12-A14/M1 iPad**：iPadOS 16.5.1（通过 Dopamine）
+- **A15/A16 iPhone**：iOS 16.5（通过 Dopamine）
+- **A15/M2 iPad**：iPadOS 16.5（通过 Dopamine）
 
-Note that A12 and newer devices running iOS 16.6 or newer do not have a jailbreak, which also inherently means no A17/M4 or later device has a jailbreak currently.
+请注意，运行 iOS 16.6 或更新版本的 A12 及更新设备目前没有越狱工具，这也就意味着目前没有任何 A17/M4 或更新设备可以越狱。

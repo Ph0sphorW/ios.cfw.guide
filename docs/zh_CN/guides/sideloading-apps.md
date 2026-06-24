@@ -1,7 +1,7 @@
 ---
 lang: zh_CN
-title: "Sideloading Apps"
-description: Guide to using sideloading and resigning your apps with or without a computer
+title: "侧载应用"
+description: 使用或不使用电脑进行侧载和重签应用的指南
 permalink: /zh_CN/sideloading-apps
 redirect_from:
   - /zh-CN/resign
@@ -22,89 +22,89 @@ extra_contributors:
   - TheHacker894
 ---
 
-## Required Reading
+## 前置阅读
 
-Semi-untethered jailbreaks require the use of a sideloaded app to jailbreak. Apps sideloaded with a regular Apple ID will expire after 7 days (or 365 days with a Developer Apple ID). After that period, you will no longer be able to open that app to re-jailbreak.
+半完全越狱需要侧载应用来执行越狱。使用普通 Apple ID 侧载的应用将在 7 天后过期（使用开发者 Apple ID 则为 365 天）。过期后，你将无法再打开该应用来重新越狱。
 
 ::: danger
 
-If you are using an iOS 16 beta, you will need to take extra steps beforehand to open sideloaded apps:
+如果你正在使用 iOS 16 测试版，需要事先执行额外步骤才能打开侧载的应用：
 
-1. Open Settings
-1. Go to Privacy & Security and find the `Developer Mode` entry
-1. Toggle Developer Mode on, then press `Reboot`
-1. After the device reboots, unlock it, and confirm that you want to enable Developer Mode
-  - If you have a passcode enabled, you'll need to enter it.
+1. 打开"设置"
+1. 进入"隐私与安全性"，找到"开发者模式"选项
+1. 开启"开发者模式"，然后点击"重新启动"
+1. 设备重启后，解锁设备，并确认你要启用开发者模式
+    - 如果你启用了锁屏密码，则需要输入密码。
 
 :::
 
-## Sideloading apps
+## 侧载应用
 
-### Sideload using Sideloadly
+### 使用 Sideloadly 侧载
 
 ::: tip
 
-Sideloadly is compatible with iOS 7 and newer.
+Sideloadly 兼容 iOS 7 及更新版本。
 
 :::
 
-1. Open Sideloadly
-1. Plug your iOS device into your computer
-    - Make sure your computer is trusted and allowed to view the contents of your device
-1. Drag and drop the `.ipa` file of your choice into Sideloadly
-1. Enter in your Apple ID
-1. Enter in your password
-    - Sideloadly must make a request to it's servers in order to work with free developer accounts. If you are not OK with this, you may use an alternate Apple ID.
+1. 打开 Sideloadly
+1. 将 iOS 设备连接到电脑
+    - 确保你的电脑已获得信任并允许查看设备内容
+1. 将你选择的 `.ipa` 文件拖放到 Sideloadly 中
+1. 输入你的 Apple ID
+1. 输入你的密码
+    - Sideloadly 需要向其服务器发送请求才能使用免费开发者帐户。如果你不希望这样做，可以使用其他的 Apple ID。
 
-### Sideload using AltStore
+### 使用 AltStore 侧载
 
 <!--I will add AltStore 1.5 soon don't worry-->
 
 ::: tip
 
-AltServer is only compatible with iOS 12.2 and newer.
+AltServer 仅兼容 iOS 12.2 及更新版本。
 
 :::
 
-1. Download the latest versions [AltServer](http://altstore.io/), [iTunes](https://www.apple.com/itunes/download/win32) if on Windows, and [iCloud](https://secure-appldnld.apple.com/windows/061-91601-20200323-974a39d0-41fc-4761-b571-318b7d9205ed/iCloudSetup.exe) if on Windows
-1. Install AltServer for your respective operating system
-    - On macOS, open the Mail app and open `Mail` -> `Preferences` in the menu bar
-    - Click on the `General` tab, the `Manage Plug-ins`, check `AltPlugin` and apply
-1. Connect your iOS Device to your Mac or PC via USB
-1. Click AltStore/AltServer in the Menu Bar/System Tray
-1. Click Install AltStore
-    - Follow all onscreen prompts
-1. Open Settings and navigate to `General` -> `Device Management` and verify AltStore
-1. Open iTunes (Windows or macOS Mojave or older) or Finder (macOS Catalina or newer) and enable syncing over WiFi
-1. Download your desired IPA file and open it in AltStore on your iOS Device.
-    - Make sure your iOS Device and Mac or Windows PC are connected to the same WiFi network
+1. 下载最新版本的 [AltServer](http://altstore.io/)、Windows 版 [iTunes](https://www.apple.com/itunes/download/win32)（如使用 Windows）和 Windows 版 [iCloud](https://secure-appldnld.apple.com/windows/061-91601-20200323-974a39d0-41fc-4761-b571-318b7d9205ed/iCloudSetup.exe)（如使用 Windows）
+1. 安装适用于你操作系统的 AltServer
+    - 在 macOS 上，打开"邮件"应用，在菜单栏中进入 `邮件` -> `偏好设置`
+    - 点击`通用`选项卡，然后点击`管理插件`，勾选 `AltPlugin` 并应用
+1. 通过 USB 将 iOS 设备连接到 Mac 或 PC
+1. 点击菜单栏/系统托盘中的 AltStore/AltServer
+1. 点击"安装 AltStore"
+    - 按照屏幕上的所有提示操作
+1. 打开"设置"，进入 `通用` -> `设备管理`，验证 AltStore
+1. 打开 iTunes（Windows 或 macOS Mojave 及更早版本）或 Finder（macOS Catalina 及更新版本），启用 WiFi 同步
+1. 下载你想要的 IPA 文件，在 iOS 设备上的 AltStore 中打开它
+    - 确保你的 iOS 设备和 Mac 或 Windows PC 连接到同一个 WiFi 网络
 
-## Resigning Apps
+## 重签应用
 
-### Resigning using ReProvision Reborn
+### 使用 ReProvision Reborn 重签
 
 ::: tip
 
-ReProvision Reborn is compatible with iOS 9 and newer.
+ReProvision Reborn 兼容 iOS 9 及更新版本。
 
 :::
 
-1. Add the Havoc Repo to your preferred package manager ([havoc.app](https://havoc.app/))
-1. Install ReProvison Reborn
-1. Open ReProvision Reborn and follow all onscreen prompts
-    - You will be asked to enter your Apple ID. This is only sent to Apple and no one else.
+1. 将 Havoc 源添加到你的首选包管理器（[havoc.app](https://havoc.app/)）
+1. 安装 ReProvison Reborn
+1. 打开 ReProvision Reborn 并按照屏幕上的所有提示操作
+    - 系统会要求你输入 Apple ID。这只会发送给 Apple，不会发送给任何其他人。
 
-### Resigning using AltDaemon
+### 使用 AltDaemon 重签
 
 ::: tip
 
-AltDaemon, which utilizes AltStore, is only compatible with iOS 12.2 and newer.
+AltDaemon 基于 AltStore，仅兼容 iOS 12.2 及更新版本。
 
 :::
 
-AltDaemon allows AltStore to automatically re-sign these applications, without needing to connect to a computer running AltServer over local network.
+AltDaemon 允许 AltStore 自动重新签名这些应用，无需通过本地网络连接到运行 AltServer 的电脑。
 
-1. Add the Chariz repository to your preferred package manager ([repo.chariz.com](https://repo.chariz.com/))
-1. Download and install the "AltDaemon" tweak
-1. Close your package manager
-1. Sign any apps that are about to expire
+1. 将 Chariz 源添加到你的首选包管理器（[repo.chariz.com](https://repo.chariz.com/)）
+1. 下载并安装"AltDaemon"插件
+1. 关闭你的包管理器
+1. 对所有即将过期的应用进行签名

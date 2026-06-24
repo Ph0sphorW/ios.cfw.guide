@@ -17,10 +17,10 @@ extra_contributors:
 - 最新版的 [python3](https://www.python.org/downloads)
 - 如果你正在使用 Windows，那么需要最新版本的 [iTunes](https://www.apple.com/itunes/download/win64) 
 - 根据你的操作系统选择最新版的 [TrollRestore](https://github.com/JJTech0130/TrollRestore/releases)
-    - Windows 用户请选择 `TrollRestore.exe`
-    - 搭载了 Apple Silicon 的 Mac 用户请选择 `TrollRestore_macOS_arm64.zip`
-    - 搭载了 Intel 的 Mac 用户请选择 `TrollRestore_macOS_amd64.zip`
-    - Linux 用户请选择 `TrollRestore_Linux.zip`
+  - Windows 用户请选择 `TrollRestore.exe`
+  - 搭载了 Apple Silicon 的 Mac 用户请选择 `TrollRestore_macOS_arm64.zip`
+  - 搭载了 Intel 的 Mac 用户请选择 `TrollRestore_macOS_amd64.zip`
+  - Linux 用户请选择 `TrollRestore_Linux.zip`
 
 ::: warning
 
@@ -56,7 +56,7 @@ extra_contributors:
 
 1. 把你的 iOS 设备连接到电脑上。
     - 确保你的电脑已标记为被信任的设备，并且被允许从电脑上查看手机内容
-1. 打开文件资源管理器 (Windows) 或者是访达 (macOS) 
+1. 打开文件资源管理器 (Windows) 或者是访达 (macOS)  
 1. 定位到存储了下载 / 解压文件的文件夹
     - 大部分都会在 `下载` 文件夹里，如果你没有改过下载路径的话。
 1. 双击 `TrollRestore`.

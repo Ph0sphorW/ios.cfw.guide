@@ -1,45 +1,45 @@
 ---
 lang: zh_CN
-title: Blocking Updates
-description: How to block updates on your iOS or iPadOS device.
+title: "屏蔽系统更新"
+description: 如何在 iOS 或 iPadOS 设备上屏蔽系统更新
 permalink: /zh_CN/blocking-updates
 extra_contributors:
   - Tanbeer191
   - Jack LaFond
 ---
 
-This will take you through installing the iOS 18 "tvOS profile" to block updates on your device. It's easy to install and ensures you'll stay on the firmware you're currently on. This is useful if you're waiting for a jailbreak for a lower version and don't want to update in case it gets patched.
+本文将引导你安装 iOS 18 的"tvOS 描述文件"来屏蔽设备上的系统更新。安装过程简单，能确保你停留在当前的固件版本。如果你正在等待低版本系统的越狱工具，不希望设备因更新导致漏洞被修复，这将非常有用。
 
-## Installing the tvOS profile
+## 安装 tvOS 描述文件
 
-1. Open [https://f.itsnebula.net/noota-18.mobileconfig](https://f.itsnebula.net/noota-18.mobileconfig) in your device's browser
-1. Select "Allow" if prompted
-1. Open the Settings application
-1. Navigate to `General` -> `Profile`
-    - This may also be called `Profile and Device Management`
-1. Tap on the tvOS Beta Profile you just installed
-1. Tap "Install"
-1. Confirm by tapping "Install" again
-    - Enter your passcode if you have one
-1. Tap "Install" for a third time
-1. Restart your device when prompted
+1. 在设备的浏览器中打开 [https://f.itsnebula.net/noota-18.mobileconfig](https://f.itsnebula.net/noota-18.mobileconfig)
+1. 如果系统提示，选择"允许"
+1. 打开"设置"应用
+1. 进入 `通用` -> `VPN 与设备管理`
+    - 也可能显示为`描述文件`或`描述文件与设备管理`
+1. 点击你刚刚安装的 tvOS Beta 版描述文件
+1. 点击"安装"
+1. 再次点击"安装"以确认
+    - 如果设置了锁屏密码，请输入密码
+1. 第三次点击"安装"
+1. 根据提示重启设备
 
-Your device should no longer receive software updates. You can confirm this by going to `Settings > General > Software Update`, and if it shows that "iOS is up to date", you are successfully blocking updates.
+你的设备将不再接收系统更新。你可以通过进入`设置 > 通用 > 软件更新`来确认，如果显示"iOS 已是最新版本"，则说明已成功屏蔽更新。
 
-## Uninstalling the tvOS Profile
+## 卸载 tvOS 描述文件
 
-If you want to update your system again, follow the following steps to remove update blocking.
+如果你想再次更新系统，请按照以下步骤移除更新屏蔽。
 
 ::: danger
 
-By removing update blocking, you may unintentionally update to a higher firmware, and be unable to jailbreak.
+移除更新屏蔽后，你可能会无意中升级到更高的固件版本，从而无法越狱。
 
 :::
 
-1. Open the Settings application
-1. Go to `General` -> `Profile`
-  - This may also be called `Profile and Device Management`
-3. Tap on the tvOS Beta Profile
-1. Tap "Remove Downloaded Profile"
+1. 打开"设置"应用
+1. 进入 `通用` -> `VPN 与设备管理`
+  - 也可能显示为`描述文件`或`描述文件与设备管理`
+3. 点击 tvOS Beta 版描述文件
+1. 点击"移除下载的描述文件"
 
-Your device should now be able to update again.
+你的设备现在应该可以再次接收更新了。

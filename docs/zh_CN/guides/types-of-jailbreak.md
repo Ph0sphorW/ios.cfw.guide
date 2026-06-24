@@ -23,6 +23,7 @@ extra_contributors:
 和电脑联系程度的高低决定了不同越狱的越狱类型。
 
 ### 完美越狱
+
 ---
 
 完美越狱可以被认为是所有越狱中的顶峰。它们只需要通过网站、应用程序或计算机运行一次漏洞利用就可以做到永久越狱。
@@ -38,6 +39,7 @@ extra_contributors:
 这里有两个完美越狱的例子： <router-link to="/installing-p0sixspwn">p0sixspwn</router-link> 和 Pangu9。
 
 ### 半完全越狱
+
 ---
 
 半完全越狱是最近几年里较为受欢迎的越狱类型。半完全，意味着每次重启或关闭设备时都需要重新进行一次越狱。
@@ -49,6 +51,7 @@ extra_contributors:
 这里有几个半完全越狱的例子： <router-link to="/installing-taurine">Taurine</router-link>、<router-link to="/installing-dopamine">Dopamine</router-link> 和 <router-link to="/installing-odyssey">Odyssey</router-link>。
 
 ### 半连接越狱
+
 ---
 
 半连接越狱与半完全越狱非常相似。区别之处在于利用漏洞的过程必须通过计算机运行，而不是通过侧载的应用程序。
@@ -60,6 +63,7 @@ extra_contributors:
 这里有几个半连接越狱的例子：<router-link to="/installing-palera1n">palera1n</router-link> 和 <router-link to="/installing-odysseyra1n">Odysseyra1n</router-link>。
 
 ### 连接越狱
+
 ---
 
 连接越狱并不适合普通用户使用。为了利用潜藏的漏洞，这些设备可能一开始根本不能越狱，甚至有可能连启动都需要电脑的帮助。
