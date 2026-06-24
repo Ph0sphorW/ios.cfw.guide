@@ -28,7 +28,7 @@ If you are using a computer with an AMD Ryzen CPU, you will likely run into issu
 
 :::
 
-palen1x is a live bootable Linux environment that allows you to quickly run palera1n on a compatible device. palera1n is capable of jailbreaking iOS devices with A8(X) to A11 SoC's on iOS 15.0 to 18.3.2
+palen1x is a live bootable Linux environment that allows you to quickly run palera1n on a compatible device. palera1n is capable of jailbreaking iOS devices with A8(X) to A11 SoC's on iOS 15.0 and later.
 
 On A11 devices, you **must disable your passcode** and will not be able to use your passcode, or other SEP functionality, until you boot into a stock iOS state. SEP functionality includes things such as a passcode, Face ID/Touch ID, and Apple Pay. 
 
@@ -37,7 +37,7 @@ Additionally, if your device is an A11 device on iOS 16 and you've set a passcod
 ## Requirements
 
 - A 128MB or greater USB Drive
-    - If you don't have a USB Drive, but do have another form of supported removable bootable hardware (e.g. A CD or DVD), you can use that instead of a USB Drive
+    - If you don't have a USB Drive, but do have another form of supported removable bootable hardware (e.g. an SD card or DVD), you can use that instead of a USB Drive
 - The latest version of [palen1x](https://github.com/palera1n/palen1x/releases)
 - [Ventoy](https://github.com/ventoy/Ventoy/releases)
 
@@ -90,6 +90,6 @@ Once the device boots up, open the palera1n loader app and tap `Sileo`. After a 
 
 To rejailbreak your device, simply rerun the command you just ran and then repeat any other applicable steps.
 
-Alternatively, if you're on versions 15.0 to 16.6.1, you can follow <router-link to="/installing-dopamine">Installing Dopamine</router-link> to install a permanently signed semi-untethered jailbreak, which will allow you to rejailbreak your device without a computer.
+Alternatively, if you're on versions 15.0 to 15.8.6 or 16.0 to 16.6.1, you can follow <router-link to="/installing-dopamine-trollstore">Installing Dopamine (TrollStore)</router-link> to install a semi-untethered jailbreak, which will allow you to rejailbreak your device without a computer.
 
 :::

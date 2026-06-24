@@ -17,7 +17,7 @@ extra_contributors:
   - nebula
 ---
 
-palera1n is a work-in-progress jailbreak that is compatible with A11 (iPhone X) and earlier devices on iOS 15.0 to 18.3.2, with some caveats for A11 devices.
+palera1n is a jailbreak that is compatible with A11 (iPhone X) and earlier devices on iOS 15.0 and later, with some caveats for A11 devices.
 
 On A11 devices, you **must disable your passcode** and will not be able to use your passcode, or other SEP functionality, until you boot into a stock iOS state. SEP functionality includes things such as a passcode, Face ID/Touch ID, and Apple Pay. 
 
@@ -32,6 +32,12 @@ If you are using an old version of palera1n that was tethered, you'll need to <r
 ::: warning
 
 If you are using Windows, you should follow <router-link to="/using-palen1x">Using palen1x</router-link> instead.
+
+:::
+
+::: warning
+
+This guide cannot be followed for Apple TVs. If you wish to use palera1n on an Apple TV, please follow <router-link to="/installing-palera1n-atv">Installing palera1n (Apple TV)</router-link>
 
 :::
 
@@ -93,7 +99,7 @@ If you are trying to use a Virtual Machine software of some sort from Windows (e
 
 Ubuntu-based Linux distributions are known to have issues successfully running palera1n.
 
-If you are using a UBuntu-based Linux distribution and do run into issues, it's recommended to either use another Linux distribution or follow <router-link to="/using-palen1x">Using palen1x</router-link> instead.
+If you are using a Ubuntu-based Linux distribution and do run into issues, it's recommended to either use another Linux distribution or follow <router-link to="/using-palen1x">Using palen1x</router-link> instead.
 
 :::
 
@@ -146,6 +152,6 @@ Once the device boots up, open the palera1n loader app and tap `Sileo`. After a 
 
 To rejailbreak your device, simply rerun the command you just ran and then repeat any other applicable steps.
 
-Alternatively, if you're on versions 15.0 to 16.6.1, you can follow <router-link to="/installing-dopamine">Installing Dopamine</router-link> to install a permanently signed semi-untethered jailbreak, which will allow you to rejailbreak your device without a computer.
+Alternatively, if you're on versions 15.0 to 15.8.6 or 16.0 to 16.6.1, you can follow <router-link to="/installing-dopamine-trollstore">Installing Dopamine (TrollStore)</router-link> to install a semi-untethered jailbreak, which will allow you to rejailbreak your device without a computer.
 
 :::

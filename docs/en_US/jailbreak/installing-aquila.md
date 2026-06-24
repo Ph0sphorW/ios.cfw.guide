@@ -7,11 +7,25 @@ discordNoticeText: For support in English, ask for help on the LegacyJailbreak [
 pkgman: cydia
 ---
 
-Aquila is capable of jailbreaking all iOS devices on firmware versions 6.0 to 6.1.6.
+Aquila is capable of jailbreaking all 32-bit iOS devices on firmware versions 4.3 to 7.1.2.
 
 Aquila is an <router-link to="/types-of-jailbreak/#untethered-jailbreaks">untethered jailbreak</router-link>, meaning it only requires the exploit to be run once, whether through a website, an app, or a computer.
 
 In order to use Aquila, you will need a computer with **64-bit** Windows or macOS.
+
+::: tip
+
+If you are using a 32-bit iOS device running iOS 7.1 to 7.1.2, you should follow <router-link to="/using-lyncis">Using Lyncis</router-link> instead.
+
+<!-- Additionally, if you are using an iPad 2 running iOS 4.3.3, or any other device running iOS 4.3 to 4.3.3, you should follow <router-link to="/using-jailbreakme-saffron">Using JailbreakMe Saffron</router-link> instead. --->
+
+:::
+
+::: warning
+
+If you are using an iOS 7 device and have just restored the device, reboot once prior to continuing, or you may run into issues.
+
+:::
 
 ## Downloads
 
@@ -27,10 +41,18 @@ On macOS, extract the zip file before proceeding with this guide.
 
 :::
 
+::: warning
+
+If you are using an iOS 7 device, make sure the device has been on for at least two minutes before proceeding.
+
+This does not apply to iOS 4.3 to 6.1.6.
+
+:::
+
 1. Plug your device into your computer
 1. Run Aquila to start the jailbreaking process:
     - **Windows**: Double-click `aquila_windows`
-    - **macOS**: Double-click `aquila_macOS`
+    - **macOS**: Double-click `aquila`
 
 Aquila will now begin to jailbreak your device.
 

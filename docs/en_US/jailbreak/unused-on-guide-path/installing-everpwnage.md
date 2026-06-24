@@ -10,25 +10,20 @@ extra_contributors:
   - Alriceee
 ---
 
-EverPwnage is an untethered jailbreak capable of jailbreaking 32-bit iOS devices on firmware versions 8.0 to 9.3.6.
+EverPwnage is an untethered jailbreak capable of jailbreaking 32-bit iOS devices on firmware versions 7.0 to 9.3.6.
 
 We will use the Sideloadly tool to install the EverPwnage jailbreak application to your iOS device for use in the next step.
 
-::: warning
+::: tip
 
-If you are using a 32-bit device on firmware version 9.1 to 9.3.4, you should follow <router-link to="/using-jailbreakme4-0">Using JailbreakMe 4.0</router-link> instead.
-
-:::
-
-::: warning
-
-EverPwnage is only capable of doing an *untethered* jailbreak for firmware versions 8.0 to 9.3.4.
-
-On firmware versions 9.3.5/9.3.6, EverPwnage is a *semi-untethered* jailbreak.
+Unless you are running into issues with it, it is generally recommended to follow <router-link to="/using-carbon">Using Carbon</router-link> instead.
 
 :::
 
 ## Downloads
+<div class="custom-container tip" id="ifJailbreaksAppSigned"><p>
+EverPwnage is currently signed at <a href="https://jailbreaks.app/legacy.html" target="_blank">jailbreaks.app</a> for easy installation without a computer.
+</p></div>
 
 - The latest version of [EverPwnage](https://github.com/LukeZGD/EverPwnage/releases/latest)
 - The latest version of [Sideloadly](https://sideloadly.io/)
@@ -60,10 +55,10 @@ The EverPwnage application can now be opened from home screen.
 1. Open the EverPwnage application from your home screen
 1. Tap `Jailbreak`
 
-You should now be jailbroken with Cydia installed on your home screen. You can use Cydia to install <router-link to="/faq/#what-are-tweaks">tweaks</router-link>, themes and more.
+You should now be jailbroken with Cydia (and on iOS 9, Zebra) installed on your home screen. You can use Cydia or Zebra to install <router-link to="/faq/#what-are-tweaks">tweaks</router-link>, themes and more.
 
 ::: tip
 
-If you wish to use a more modern package manager, and are using a device on iOS 9, continue to <router-link to="/installing-zebra">Installing Zebra</router-link>
+If you are using a device on iOS 9, continue to <router-link to="/using-zebra">Using Zebra</router-link> instead.
 
 :::

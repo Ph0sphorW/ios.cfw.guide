@@ -16,7 +16,7 @@ This will take you through installing the iOS 26 "tvOS profile" to block updates
 1. Select "Allow" if prompted
 1. Open the Settings application
 1. Navigate to `General` -> `Profile`
-    - This may also be called `Profile and Device Management`
+    - This may also be called `Profile & Device Management`, `VPN & Device Management`, or `VPN, DNS, & Device Management`
 1. Tap on the tvOS Beta Profile you just installed
 1. Tap "Install"
 1. Confirm by tapping "Install" again
@@ -38,7 +38,7 @@ By removing update blocking, you may unintentionally update to a higher firmware
 
 1. Open the Settings application
 1. Go to `General` -> `Profile`
-  - This may also be called `Profile and Device Management`
+  - This may also be called `Profile & Device Management`, `VPN & Device Management`, or `VPN, DNS, & Device Management`
 3. Tap on the tvOS Beta Profile
 1. Tap "Remove Downloaded Profile"
 

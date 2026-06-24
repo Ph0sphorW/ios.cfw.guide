@@ -11,6 +11,7 @@ pkgman: sileo
 extra_contributors:
   - TheHacker894
   - Alriceee
+  - kittymaxine
 ---
 
 Electra is a <router-link to="/types-of-jailbreak/#semi-untethered-jailbreaks">semi-untethered jailbreak</router-link>, meaning it requires an app to re-apply the exploit after a reboot.
@@ -19,7 +20,7 @@ The tool is compatible with jailbreaking devices on iOS versions from 11.0 to 11
 
 Due to how semi-untethered jailbreaks work, the app will need to be <router-link to="/resigning-apps">re-signed</router-link> once every 7 days.
 
-We will use Sideloadly to install the Electra application to your iOS device for use in the next step.
+We will use PlumeImpactor to install the Electra application to your iOS device for use in the next step.
 
 ::: warning
 
@@ -34,19 +35,19 @@ Electra is currently signed at <a href="https://jailbreaks.app/" target="_blank"
 </p></div>
 
 - The latest version of [Electra](https://coolstar.org/electra/)
-- The latest version of [Sideloadly](https://sideloadly.io/)
+- The latest version of [PlumeImpactor](https://github.com/khcrysalis/PlumeImpactor/releases/latest)
 - The latest version of [iTunes](https://www.apple.com/itunes/download/win64) if on Windows.
-
-![A screenshot of the Sideloadly application (Windows)](/assets/images/sideloadly_win.png)
 
 ## Installing the application
 
-1. Open Sideloadly
 1. Plug your iOS device into your computer
     - Make sure your computer is trusted and allowed to view the contents of your device
-1. Drag and drop the Electra `.ipa` file into Sideloadly
-1. Enter in your Apple Account
-1. Enter in your password
+1. Open PlumeImpactor
+1. Go to `Settings` -> `Sign In`
+1. Enter in your Apple Account and Password
+1. Close the Settings and Sign In windows
+1. Drag and drop the Electra `.ipa` file into PlumeImpactor
+1. Click `Install`
 
 The app will now install to your iOS device.
 
@@ -70,3 +71,18 @@ If your device crashes or restarts unexpectedly and the jailbreak isn't installe
 :::
 
 You should now be jailbroken with Sileo installed on your home screen. You can use Sileo to install <router-link to="/faq/#what-are-tweaks">tweaks</router-link>, themes and more.
+
+While you are now jailbroken at this point, we need to both update and install some packages so that we're able to both update other packages and have stuff work properly
+
+## Installing necessary software
+
+1. Open the Sileo app
+1. Tap on the "Sources" tab
+1. Press the `+` icon in the top right corner
+1. Enter `https://kittymaxine.com/repo` and press "Add Source"
+1. Wait for the repo to load, then tap "Maxine's Repo"
+1. Tap "Packaging", then tap on `ElectraRepoFix`
+1. Tap "Get"
+1. Tap the "Queued" bar at the bottom of the page
+1. Tap "Confirm"
+1. Once finished, tap "Done"

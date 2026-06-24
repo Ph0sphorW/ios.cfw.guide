@@ -18,26 +18,30 @@ extra_contributors:
   - Alriceee
 ---
 
-kok3shi9 is capable of jailbreaking all devices on 9.3.2 to 9.3.6, as well as 64-bit devices on 9.2 to 9.3.1
+kok3shi9 is capable of jailbreaking 64-bit devices on 9.2 to 9.3.5.
+
+::: warning
+
+If you are using a 32-bit device, you should instead follow <router-link to="/using-carbon">Using Carbon</router-link>.
+
+:::
 
 ## Downloads
 
-- The version of kok3shi9 for your device:
-  - **32-bit devices** should download the **4.0.3** version of [kok3shi9](https://kok3shidoll.web.app/kok3shi9_32.html)
-  - **64-bit devices** should download the **latest** version of [kok3shi9](https://kok3shidoll.web.app/kok3shi9.html)
-- The latest version of [Sideloadly](https://sideloadly.io/)
+- The latest version of [kok3shi9](https://web.archive.org/web/20250831054016/https://kok3shidoll.github.io/download/kokeshi/v5/kok3shi9_v5.0.3.ipa) from archive.org
+- The latest version of [PlumeImpactor](https://github.com/khcrysalis/PlumeImpactor/releases/latest)
 - The latest version of [iTunes](https://www.apple.com/itunes/download/win64) if on Windows.
-
-![A screenshot of the Sideloadly application (Windows)](/assets/images/sideloadly_win.png)
 
 ## Installing the application
 
-1. Open Sideloadly
 1. Plug your iOS device into your computer
     - Make sure your computer is trusted and allowed to view the contents of your device
-1. Drag and drop the kok3shi9 `.ipa` file into Sideloadly
-1. Enter in your Apple Account
-1. Enter in your password
+1. Open PlumeImpactor
+1. Go to `Settings` -> `Sign In`
+1. Enter in your Apple Account and Password
+1. Close the Settings and Sign In windows
+1. Drag and drop the kok3shi9 `.ipa` file into PlumeImpactor
+1. Click `Install`
 
 The app will now install to your iOS device.
 
@@ -61,6 +65,19 @@ If your device crashes or restarts unexpectedly and the jailbreak isn't installe
 :::
 
 You should now be jailbroken with Cydia installed on your home screen. You can use Cydia to install <router-link to="/faq/#what-are-tweaks">tweaks</router-link>, themes and more.
+
+## Updating Certificates
+
+::: warning
+
+While this section is *technically* optional, many modern repositories (including the repository the untether for the next section is on) **will not work** without these updated certificates.
+
+:::
+
+1. Open Safari on your iOS device
+1. Go to the [http://tlsroot.litten.ca](http://tlsroot.litten.ca) website
+1. Tap `Signed iOS Bundle (iOS 5+)`
+1. Tap `Install` -> `Install` -> `Install` -> Done
 
 ## Untethering (64-bit, iOS 9.2 to 9.3.4)
 
