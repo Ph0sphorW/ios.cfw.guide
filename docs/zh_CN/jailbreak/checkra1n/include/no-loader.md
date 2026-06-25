@@ -1,5 +1,5 @@
 ::: danger
 
-After installing Odysseyra1n, **do not** install Cydia from the Loader app.
+安装 Odysseyra1n 之后, **不要** 从加载器中安装 Cydia。
 
 :::

@@ -13,7 +13,7 @@ extra_contributors:
   - WhitetailAni
 ---
 
-!!!include(./docs/en_US/jailbreak/checkra1n/include/semi-tethered.md)!!!
+!!!include(./docs/zh_CN/jailbreak/checkra1n/include/semi-tethered.md)!!!
 
 checkra1n is a tool capable of jailbreaking the Apple TV HD and Apple TV 4K (1st generation) firmwares 12.0 to 14.7. It's currently only compatible with macOS and Linux. A Windows release is planned to release in the future.
 

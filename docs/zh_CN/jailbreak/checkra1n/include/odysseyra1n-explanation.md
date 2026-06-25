@@ -1,1 +1,1 @@
-After installing checkra1n, we'll be using a script to install Odysseyra1n. This replaces important parts of the jailbreak with modern and fast alternatives.
+安装 checkra1n 之后，我们会使用一个脚本以 Odysseyra1n。这将会以现代而高效的替代品更替越狱过程中的重要组件。
